@@ -1,0 +1,77 @@
+#mines-assistant-ui {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: rgba(28, 28, 28, 0.95);
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    min-width: 200px;
+    z-index: 9999;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    user-select: none;
+}
+
+.assistant-header {
+    background: #1a1a1a;
+    padding: 8px 12px;
+    border-radius: 8px 8px 0 0;
+    cursor: move;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+}
+
+.assistant-header span {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.minimize-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 0 4px;
+    font-size: 16px;
+}
+
+.minimize-btn:hover {
+    color: #ccc;
+}
+
+.assistant-content {
+    padding: 12px;
+}
+
+.stat-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 13px;
+}
+
+.stat-row:last-child {
+    margin-bottom: 0;
+}
+
+.stat-row span:first-child {
+    color: #888;
+}
+
+.stat-row span:last-child {
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Animation for updates */
+@keyframes highlight {
+    0% { background-color: rgba(255, 255, 255, 0.1); }
+    100% { background-color: transparent; }
+}
+
+.stat-row.updated {
+    animation: highlight 0.5s ease-out;
+} 

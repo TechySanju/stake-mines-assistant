@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stake Mines Assistant</title>
+    <style>
+        body {
+            width: 300px;
+            padding: 15px;
+            font-family: Arial, sans-serif;
+            background: #1c1c1c;
+            color: #fff;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .header h1 {
+            font-size: 18px;
+            margin: 0;
+            color: #fff;
+        }
+        .stats {
+            background: #252525;
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 15px;
+        }
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        .stat-row:last-child {
+            margin-bottom: 0;
+        }
+        .stat-label {
+            color: #888;
+        }
+        .stat-value {
+            font-weight: bold;
+        }
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Stake Mines Assistant</h1>
+    </div>
+    <div class="stats">
+        <div class="stat-row">
+            <span class="stat-label">Total Rounds:</span>
+            <span class="stat-value" id="popup-total-rounds">0</span>
+        </div>
+        <div class="stat-row">
+            <span class="stat-label">Wins:</span>
+            <span class="stat-value" id="popup-total-wins">0</span>
+        </div>
+        <div class="stat-row">
+            <span class="stat-label">Losses:</span>
+            <span class="stat-value" id="popup-total-losses">0</span>
+        </div>
+        <div class="stat-row">
+            <span class="stat-label">Win Rate:</span>
+            <span class="stat-value" id="popup-win-rate">0%</span>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Open Stake.com Mines game to start tracking</p>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html> 
