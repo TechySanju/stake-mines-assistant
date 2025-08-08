@@ -75,7 +75,7 @@ This project is licensed under the **MIT License** – feel free to use or modif
 
 ## 🙋‍♂️ Author
 
-Built by **Sanju Singh**  
+Built by **Sanju Kumar**  
 📍 [GitHub Profile](https://github.com/TechySanju)
 
 ---
